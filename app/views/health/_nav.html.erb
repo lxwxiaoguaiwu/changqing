@@ -1,0 +1,105 @@
+<div class="relative">
+  <div class="homenav">
+    <div class="container">
+      <div class="logo">
+        <%= image_tag("changqing/home_nav_logo.png") %>
+        <div class="logo-zi">
+          <span class="logo-title">常青社区</span>
+          <span class="logo-title-e">CHANGCHING</span>
+        </div>
+      </div>
+      <div class="tab links" id="globar_topbar_links">
+        <ul class="box-lanrenzhijia" id="box-lanrenzhijia">
+            <li><a href="/welcome/index">首页</a></li>
+            <li><a href="/community">认识邻居</a></li>
+            <li><a href="/health">新家庭计划</a></li>
+            <li><a href="/club">常青俱乐部</a></li>
+        	<li><a href="/about">关于我们</a></li>
+        </ul>
+        <div class="focus" style="width: 26px;"><em></em></div>
+      </div>
+    </div>
+    <div class="toggle-button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+    <ul class="nav-hidden">
+        <li><a href="/welcome/index">首页</a></li>
+        <li><a href="/community">认识邻居</a></li>
+        <li><a href="/health">新家庭计划</a></li>
+        <li><a href="/club">常青俱乐部</a></li>
+        <li><a href="/about">关于我们</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(document).ready(function(e) {
+      jQuery(function($) {
+          var linkTimer, linkPanel = $('#globar_topbar_links'),
+          linkFocusStyle = linkPanel.find('.focus').prop('style');
+          if (linkFocusStyle) {
+              linkPanel.delegate('li a', 'mouseenter',
+              function() {
+                  var self = $(this);
+                  clearTimeout(linkTimer);
+
+                  linkFocusStyle.left = self.position().left + 'px';
+                  linkFocusStyle.width = self.innerWidth() + 'px';
+              }).bind('mouseleave',
+              function() {
+                  clearTimeout(linkTimer);
+                  linkTimer = setTimeout(function() {
+                      linkFocusStyle.left = '';
+                  },
+                  240);
+              });
+          }
+      });
+  });
+</script>
+<script>
+ $('.toggle-button').click(function () {
+     $(' .nav-hidden').toggleClass('nav-hidden-show');
+ })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        // alert($(window).height()); //浏览器当前窗口可视区域高度
+        $(".hnav").css("height",$(window).height()*0.9);
+        $(".nav-hidden").css("height",$(window).height());
+    })
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // alert($(window).height()); //浏览器当前窗口可视区域高度
+    $(".hnav").css("height",$(window).height()*0.9);
+  })
+</script>
+<script type="text/javascript">
+
+  var urlstr = location.href;
+  //alert((urlstr + '/').indexOf($(this).attr('href')));
+
+  var urlstatus=false;
+
+  $("#box-lanrenzhijia a").each(function () {
+
+    if ((urlstr + '/').indexOf($(this).attr('href')) > -1&&$(this).attr('href')!='') {
+      $(this).addClass('current');
+      $(this).css({'border-bottom':'solid 3px #4c7233','color':'#4c7233'});
+      urlstatus = true;
+
+
+    } else {
+      $(this).removeClass('current');
+
+    }
+
+  });
+
+  if (!urlstatus) {$("#box-lanrenzhijia a").eq(0).addClass('current'); }
+
+
+</script>

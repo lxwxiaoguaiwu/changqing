@@ -1,0 +1,216 @@
+
+.jkpg{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
+}
+.jkpg li{
+  width: 45%;
+  border: 1px solid #ccc;
+}
+#sidemenu .jtjh a{
+  padding: 0 30px;
+  justify-content: space-between;
+}
+.jiankang,
+.yundong{
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+.yinshi,
+.shenghuo{
+  margin-bottom: 3%;
+}
+.page-contents .pic{
+  width: 50%;
+
+}
+.page-contents .pic img{
+  width: 100%;
+}
+.page-jt .jieshao{
+  width: 50%;
+}
+.page-jt .pic{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.page-jt .pic img{
+  width: 100%;
+}
+.jiankang,
+.yundong,
+.yinshi,
+.shenghuo{
+  display: flex;
+}
+.sleep{
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px;
+  background: #e5e5e5;
+  text-align: center;
+}
+.ss{
+  display: flex;
+  flex-direction: column;
+}
+.jiankang-r{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.jiankang .jiankang-r p{
+  width: 70%;
+}
+.page-contents{
+  /*padding: 0 20px;*/
+}
+.teacher{
+  display: flex;
+}
+.teacher-l{
+  flex:1;
+}
+.teacher-l .wenzi .fir{
+  margin-bottom: 20px;
+
+}
+.teacher-l .wenzi span{
+  font-size: 20px;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+.teacher-l .wenzi p{
+  font-size: 14px;
+  width: 73%;
+  line-height: 1.3;
+  color: #333;
+}
+.jicon{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.jicon .majors{
+  display: flex;
+  flex-direction: column;
+}
+.jicon .majors span{
+  padding: 10px 0;
+}
+.jicon .majors img{
+  width: 39px;
+}
+.monitoring{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.monitoring li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.monitoring li span{
+  padding: 10px 0;
+}
+.jieshao li{
+  font-size : 14px;
+
+}
+@media (max-width: 576px) {
+  .container{
+    width: 100%;
+  }
+  .span9{
+    width: 100%;
+  }
+  .page-contents .pic{
+    width: 100%;
+    text-align: center;
+  }
+  .page-contents .pic img{
+    /*width: 50%;*/
+  }
+  .page-jt .jieshao{
+    width: 100%;
+  }
+  .communitybg img{
+    height: 150px;
+  }
+  .jkpg{
+    display: block;
+    padding: 0;
+  }
+  .jkpg li,
+  .jiankang-r{
+    width: 100%;
+  }
+  .jkpg li{
+    height: 14rem
+  }
+  .jiankang-r p{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .jiankang .jiankang-r p{
+    width: 100%;
+  }
+  .sleep{
+    padding: 0;
+    width: 15.5rem;
+  }
+  .sleep .ss img{
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .sleep .ss span{
+    font-size: 2.8rem;
+  }
+  .teacher{
+    display: block;
+  }
+  .teacher-l .wenzi span{
+    font-size: 2rem;
+  }
+  .teacher-l .wenzi p{
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    width: 100%;
+  }
+  .teacher-r{
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .teacher-r img{
+    width: 70%;
+  }
+  .monitoring{
+    justify-content: left;
+  }
+  .monitoring li{
+    width: 30%;
+    margin-right: 1.8rem;
+    margin-bottom: 1.8rem;
+
+  }
+  .monitoring li img{
+    width: 100%;
+  }
+  .jieshao ul{
+    padding-bottom: 3rem;
+  }
+  .jieshao li{
+    color: #666;
+  }
+}

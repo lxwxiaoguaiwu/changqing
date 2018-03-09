@@ -1,0 +1,12 @@
+<% @contents.each do |content|%>
+<div class="content1">
+  <span class="date"><%= content.date_publish.strftime("%Y.%m.%d") %></span>
+  <div class="card">
+    <%= link_to("/content/#{content.id}") do %>
+      <%= image_tag content.asset.url(:medium) %>
+      <span class="category"><%= content.content_builder_category.name%></span>
+      <span class="title"><%= content.title%></span>
+    <% end %>
+  </div>
+</div>
+<%end%>

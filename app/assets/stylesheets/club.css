@@ -1,0 +1,178 @@
+.club-content .title-1{
+  font-size: 20px;
+  display: block;
+  padding: 0 0 20px 0;
+}
+.club-content .title-1-content{
+  font-size: 14px;
+  padding-left: 30px;
+  line-height: 1.7;
+  padding-bottom: 30px;
+}
+.communication .page-header{
+  padding-top: 0;
+}
+.julebu{
+  /*padding: 0 3%;*/
+}
+.circle{
+  width: 10px;
+  height: 10px;
+  background-color: #4c7233;
+  display: -webkit-inline-box;
+  border-radius: 50%;
+}
+.penmanship{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+.kcjs ul li{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 36px;
+}
+.kcjs ul li .kc{
+  display: flex;
+  align-items: center;
+}
+.kcjs ul li .kc span{
+  font-size: 18px;
+}
+.kcap .am,
+.kcap .af{
+  background-color: #e5e5e5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  height: 43px;
+}
+.kcap .week{
+  font-size: 16px;
+  height: 60px;
+}
+.kcap .am .am1{
+  font-size: 16px;
+}
+.yidong{
+  display: none;
+}
+th{
+  text-align: center;
+}
+.wrap { margin: 0 auto; position: relative;}
+.feng_tecList h1 i{ float:left; background-position: 0px -230px; font-size:30px; font-weight: 600; line-height: 42px; padding-left:40px; width:95px;height: 36px;}
+.feng_tecList .title_right .triggers{ line-height: 38px; height: 38px;width: 100%;position: absolute;left: 0;top: 25px;text-align: right;}
+.feng_tecList .picList{ display:inline-block; margin-bottom: 20px; overflow:hidden;}
+.feng_tecList .picList .moduleOne{float:left; margin-bottom:2px; overflow:hidden; position: relative;}
+.feng_tecList .picList .moduleOne a,
+.feng_tecList .picList .moduleTwo a{ display:block; height:100%; width:100%; position:relative;}
+.feng_tecList .picList .moduleOne a:hover,
+.feng_tecList .picList .moduleTwo a:hover{ text-decoration: none;}
+.feng_tecList .picList .moduleOne .mask{ background:#000; background:rgba(0,0,0,.2); filter:alpha(opacity=20); opacity:.2; position:absolute; left: 0; top: 0; }
+.feng_tecList .picList .moduleOne img{ overflow:hidden;}
+.feng_tecList .picList .games_bottom{ background-color: #fff; clear: both; height: 260px; overflow: hidden;}
+.feng_tecList .picList .label{ color:#fff; padding:0 8px; line-height:20px; border-radius:3px; height:20px; position:absolute; top:16px; left:16px;}
+.feng_tecList .picList .drift{  max-width:449px; font-weight: 700;position:absolute; left:25px; right: 25px;bottom:0;text-align: center;}
+.feng_tecList .picList .title{ display:inline-block; color:#fff; font-size:14px; padding:5px 0; margin-bottom: 15px; height:auto; word-break:break-all; word-wrap:break-word; -webkit-text-shadow: 0 2px 4px rgba(0,0,0,.75);
+-ms-text-shadow: 0 2px 4px rgba(0,0,0,.75);-moz-text-shadow: 0 2px 4px rgba(0,0,0,.75);text-shadow: 0 2px 4px rgba(0,0,0,.75);}
+.feng_tecList .picList .abs{ font-size:14px; text-align: center;color:#fff; line-height:20px; height:0; overflow:hidden; word-break:break-all; word-wrap:break-word; -webkit-text-shadow: 0 2px 4px rgba(0,0,0,.75);
+-ms-text-shadow: 0 2px 4px rgba(0,0,0,.75);-moz-text-shadow: 0 2px 4px rgba(0,0,0,.75);text-shadow: 0 2px 4px rgba(0,0,0,.75);}/* max-height:84px;*/
+.feng_tecList .picList .moduleTwo .drift,.feng_tecList .picList .moduleTwo .abs{ width: 198px;}
+.feng_tecList .picList .moduleTwo{ float:left; margin-bottom:2px; height:246px; width:248px; overflow:hidden; position: relative;}
+.feng_tecList .picList .moduleTwo img{ height:246px; width:248px; overflow:hidden;}
+.feng_tecList .picList .moduleTwo .mask{ background:#000; background:rgba(0,0,0,.2); filter:alpha(opacity=20); opacity:.2; position:absolute; left: 0; top: 0; height:246px; width:248px;}
+.feng_tecList .picList .midMargin{ display:inline; margin:0 2px; width: 249px;}
+.feng_tecList .picList .midMargin img{ width: 249px;}
+.feng_tecList .dongtai{background-color: #ffd200;}
+.feng_tecList .game_dongtai{ background-color: #fff; border-left: none;}
+.feng_tecList .game_dongtai ul{margin: 40px 15px;}
+.feng_tecList .game_dongtai ul li{ border-bottom: 1px dotted #dedede; padding: 16px 0px; height: 40px; overflow: hidden;line-height:22px;}
+.feng_tecList .game_dongtai ul li.last{border-bottom: none;}
+.feng_tecList .picList .moduleOne a:before,.feng_tecList .picList .moduleTwo a:before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: rgba(0,0,0,0);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(#000));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), #000);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0), #000);
+  opacity: 0.7;
+  content: " ";
+  filter:alpha(opacity=40);
+}
+.feng_tecList .picList .moduleOne a:hover:before,.feng_tecList .picList .moduleTwo a:hover:before{ opacity: 1}
+.feng_tecList .game_news, .feng_tecList .game_dongtai{ background-color: #fff; float: left;width: 248px;border: 1px solid #f0f0f0; border-right: none;height: 258px;position: relative; }
+.feng_tecList .game_dongtai{ border-right: 1px solid #f0f0f0; width: 249px;}
+.feng_tecList a:hover{color: #ed0000;}
+.feng_tecList .game_news.adw{ width: 250px;}
+@media (max-width: 576px) {
+  #feng_tecList{
+    flex: 1;
+    padding: 0 0.5rem;
+  }
+  .moduleOne{
+    width: 100%;
+  }
+  .club-content .title-1{
+    /*font-size: 2.8rem;*/
+  }
+  .club-content .title-1-content{
+    /*font-size: 1.6rem;*/
+    padding-left: 0;
+    /*padding-top: 2rem;
+    padding-bottom: 3rem;*/
+  }
+  .kcjs ul li{
+    display: block;
+    margin-bottom: 0;
+  }
+  .kcjs ul li .kc{
+    text-align: left;
+    line-height: 50px;
+    /*padding-left: 2rem;*/
+  }
+  .kcjs ul li .kc .circle{
+    display: none;
+  }
+  .kcjs ul li .kc span{
+    /*font-size: 1.6rem;
+    padding-left: 1.5rem;*/
+    color: #666;
+  }
+  .penmanship{
+    padding: 0;
+    justify-content: space-between;
+  }
+  .penmanship img{
+    width: 100%;
+    height: 100%;
+  }
+  .pc{
+    display: none;
+  }
+  .yidong{
+    display: inline-table;
+    /*font-size: 2.4rem;*/
+    text-align: center;
+    font-weight: bold;
+  }
+  .yidong .sxw,
+  .yidong .week1{
+    /*font-size: 2.8rem;*/
+  }
+  .yidong .one{
+    background-color: #e5e5e5;
+    height: 2rem;
+  }
+  .feng_tecList .picList .title{
+    /*font-size: 1.5rem;*/
+  }
+  .club-content .title-1-content{
+    color: #666;
+  }
+}

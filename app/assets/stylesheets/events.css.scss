@@ -1,0 +1,87 @@
+body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+body { position: relative; font: 12px/1 "Microsoft YaHei", Arial;}
+ul, ol { list-style: none; }
+img { border: 0 none; }
+input, select { vertical-align: middle; }
+table { border-collapse: collapse; width: 100%;}
+s, em, i { font-style: normal; text-decoration: none; }
+.cf { *zoom: 1; }
+.cf:after { clear: both; content: ""; display: block; height: 0; overflow: hidden; visibility: hidden; zoom: 1; }
+a{
+  text-decoration:none;
+}
+a:hover{
+  text-decoration: none;
+}
+button,input{
+  outline: none;
+}
+.content1{
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+  // box-shadow: -2px -2px 13px #000;
+}
+.content1 .date{
+  font-size: 1.2rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.card{
+  position: relative;
+}
+.card img{
+  width: 100%;
+}
+.card .title{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.1rem;
+  display: block;
+  width: 70%;
+  text-align: center;
+  overflow: hidden;
+  height: 1.8rem;
+  line-height: 1.5;
+}
+.card .c-title{
+  font-size: 1.1rem;
+  line-height: 1.5;
+  bottom: 17%;
+  height: 1.8rem;
+  overflow: hidden;
+}
+.card .c-date{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #fff;
+  font-size: 1rem;
+  transform: translateX(-50%);
+}
+.card .category{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: block;
+  border: 1px solid #fff;
+  width: 3rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+.content1 .cb-text.medium-editor-element{
+  font-size: 1rem;
+  line-height: 2;
+  text-indent: 2em;
+}

@@ -1,0 +1,11 @@
+<div class="content1">
+  <div class="card">
+    <%= image_tag @content.asset.url(:medium) %>
+    <span class="category"><%= @content.content_builder_category.name%></span>
+    <span class="c-title title"><%= @content.title%></span>
+    <span class="c-date date"><%= @content.date_publish.strftime("%Y.%m.%d") %></span>
+  </div>
+</div>
+<div class="content1">
+  <%= @content.content_sanitized %>
+</div>

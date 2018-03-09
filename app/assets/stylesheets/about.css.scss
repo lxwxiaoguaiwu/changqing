@@ -1,0 +1,170 @@
+.gongsijianjie{
+  display: block;
+  width: 65%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.guanli{
+  display: block;
+  width: 80%;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.qyjs-pic{
+  margin-bottom: 20px;
+}
+.dingwei,.yuanjing{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.dw,.yj{
+  font-size: 20px;
+}
+.dw-c,.yj-c{
+  font-size: 14px;
+}
+.dingwei{
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+.biankuang{
+  position: absolute;
+  top: 25%;
+  left: 17%;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 70%;
+  height: 45%;
+}
+.convenience{
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.bj{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+.fw{
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 6;
+}
+.bjt-box{
+  width: 100%;
+}
+.qyjs-pic img{
+  width: 100%;
+}
+.convenience img{
+  width: 100%;
+}
+.beijingtu{
+  background: asset-url("changqing/value_convenience_pho.jpg") no-repeat;
+  width: 100%;
+  height: 183px;
+  background-size: 100% 100%;
+}
+.beijingtu1{
+  background: asset-url("changqing/value_majors_pho.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.beijingtu2{
+  background: asset-url("changqing/value_security_pho.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.box1{
+  width: 75%;
+  height: 45%;
+  border: 1px solid white;
+  border-top: none;
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+}
+#work .showcasing .page-about{
+  display: flex;
+  flex-direction: unset;
+}
+#work .showcasing .page-about .wh-l{
+  flex: 1
+}
+#work .showcasing .page-about .wh-r{
+  width: 50%;
+}
+#work .showcasing .page-about .wh-r img{
+  width: 100%;
+}
+.box1:before{
+  content: '';
+  width: 40%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.box1:after{
+  content: '';
+  width: 40%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.text{
+  position: absolute;
+  color: #FFF;
+  top: -10px;
+  left: 47%;
+  font-size: 20px;
+}
+@media (max-width: 576px){
+  .gongsijianjie{
+    // font-size: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  .guanli{
+    // font-size: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  .qyjs-pic img{
+    width: 100%;
+  }
+  .dw, .yj{
+    // font-size: 2.8rem;
+  }
+  .box1{
+    width: 95%;
+  }
+  .fw{
+    overflow: hidden;
+    height: 100%;
+  }
+  .dw-c, .yj-c{
+    // font-size: 2rem;
+    color: #666;
+  }
+  #work{
+    padding: 6% 0;
+  }
+  .wh-r{
+    text-align: center;
+    padding: 6rem 0;
+  }
+}

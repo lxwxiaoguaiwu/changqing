@@ -1,0 +1,143 @@
+
+<div class="container linlibang">
+  <div class="visual">
+    <!-- visualNav default menu -->
+      <div id="sidemenu">
+        <ul class="caidan">
+          <li class="first"><a href="#home"><span>认识邻居</span><span>></span></a></li>
+          <li class="second"><a href="#work"><span>生活服务家</span><span>></span></a></li>
+          <li class="last"><a href="#contact"><span>小区留言板</span><span>></span></a></li>
+        </ul>
+      </div>
+
+      <!-- main contents -->
+      <div class="v-con">
+
+        <div id="home" class="content">
+          <div class="inner-content">
+            <span class="home-title">认识邻居</span>
+            <hr>
+            <ul class="fl_r">
+              <li>
+                <div class="communication">
+                  <div class="row-fluid">
+                    <div class="span12">
+                      <div class="page-content">
+                        <div class="jieshao">
+                          <span>常青在线微信公众号<br>认证系统</span>
+                          <p>通过常青在线微信公众号的认证系统，对申请加入的用户身份进行严格审核，以确保每位注册用户都是其所在社区内的真实住户，以维护邻里间社交的安全性。同时注册成功的用户可加入其所在社区专属微信群并查看该社区内邻居的注册状态，对未加入的邻居发出邀请卡片。</p>
+                        </div>
+                        <div class="pic">
+                          <%= image_tag("changqing/community_communication_pho.jpg") %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div id="work" class="content">
+          <div class="inner-content">
+            <span class="home-title">生活服务家</span>
+            <hr>
+            <ul class="fl_r">
+              <li>
+                <div class="communication">
+                  <div class="row-fluid">
+                    <div class="span12">
+                      <div class="page-content">
+                        <div class="jieshao">
+                          <span>大家身边的当家<br>小能手</span>
+                          <p>大家身边的当家小能手——成功注册常青在线的邻居们可以推荐其周边的生活服务人员信息，分享在“生活服务家”平台，由常青在线核实服务人员的真实性与安全性。同时用户可对其服务人员进行点评，为周边居民提供参考，并促进服务质量。</p>
+                        </div>
+                        <div class="pic">
+                          <%= image_tag("changqing/community_showcasing_pho.jpg") %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="contact" class="content">
+          <div class="inner-content">
+            <span class="home-title">小区留言板</span>
+            <hr>
+            <ul class="fl_r">
+              <li>
+                <div class="life">
+                  <div class="page-content">
+                    <div class="jieshao">
+                      <span>远亲不如近邻</span>
+                      <p>远亲不如近邻——在这里，已加入常青在线的邻居们，可在留言板上发布需求或求助信息。同时，“邻里帮”每日早8点与晚8点对用户开放分享动态权限，只有在这两个时间点第一个分享成功的图文信息，才被所有邻居可见，其他未分享成功的用户享有对分享信息进行评论的权限。</p>
+                    </div>
+                    <div class="pic">
+                      <%= image_tag("changqing/community_life_pho.jpg") %>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>
+<script>
+  $(window).scroll(function () {
+    if ($(document).scrollTop() >= 301) {
+        $('#sidemenu .caidan').addClass('fix');
+        $('#breadcrumb').addClass('fix1');
+
+    } else {
+        $('#sidemenu .caidan').removeClass('fix');
+        $('#breadcrumb').removeClass('fix1');
+    }
+});
+</script>
+<script type="text/javascript">
+  $(function(){
+    $('#sidemenu').visualNav({
+      link: 'a',         // add a link class, as necessary (e.g. 'a.menu')
+      targetAttr: 'href',      // added in case you have link = "div" and attribute something like
+      selectedAppliedTo : 'li',        // where to add the selected class name; to only apply to the link, use the same value as is in the link option
+      contentClass: 'content',   // content class to get height of the section
+      contentLinks: 'visualNav', // class name of links inside the content that act like the visualNav menu (smooth scroll)
+      externalLinks: 'external',  // class name of links that link to external content.
+      useHash: true,        // if true, the location hash will be updated
+
+      // Classes added to items
+      inViewClass: 'inView',    // css class added to items in the viewport
+      selectedClass: 'selected',  // css class applied to menu when a link is selected (highlighted)
+      currentContent: 'current',   // css class applied to the content block when it is currently selected in the menu.
+
+      // Appearance
+      bottomMargin: 200,         // margin from the end of the page where the last menu item is used (in case the target is short)
+      fitContent: false,       // If true, the contentClass width will be adjusted to fit the browser window (for horizontal pages).
+      offsetTop: 80,           // add a top offset value (pixels) or jQuery element (height is measured), of any top menu or gap.
+      scrollOnInit: false,       // scroll to first item automatically on initialization
+
+      // Animation
+      animationTime: 500,        // page scrolling time in milliseconds or function( distance ) { return milliseconds; }
+      stopOnInteraction : true,        // if the user presses any key or scrolls the mouse, the animation will cancel
+      easing: [ 'swing', 'swing' ], // horizontal, vertical easing; it might be best to leave one axis as swing [ 'swing', 'easeInCirc' ]
+
+      // Callbacks
+      // visNav is visualNavigation object (see the callbacks page)
+      // $selected is a jQuery object of the currently selected content (class name from "contentClass")
+      initialized: function(visNav, $selected){ }, // Callback executed when the visualNav plugin has finished initializing
+      beforeAnimation: function(visNav, $selected){ }, // Callback executed before the animation begins moving to the targetted element
+      complete: function(visNav, $selected){ }, // Callback executed when the targetted element is in view and scrolling animation has completed
+      changed: function(visNav, $selected){ }  // Callback executed every time the current menu item changes
+
+    });
+  });
+</script>

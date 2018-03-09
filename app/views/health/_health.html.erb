@@ -1,0 +1,175 @@
+<div class="container linlibang">
+  <div class="visual">
+    <!-- visualNav default menu -->
+      <div id="sidemenu">
+        <ul class="caidan jtjh">
+          <li class="first">
+            <a href="#home">
+              <span>婴幼儿观察指导</span><span>></span>
+            </a>
+          </li>
+          <li class="second"><a href="#work"><span>睦邻家园</span><span>></span></a></li>
+          <li class="last"><a href="#contact"><span>家庭医生</span><span>></span></a></li>
+        </ul>
+      </div>
+
+      <!-- main contents -->
+      <div class="v-con">
+
+        <div id="home" class="content">
+          <div class="inner-content">
+            <span class="home-title">婴幼儿观察指导系统</span>
+            <hr>
+            <ul class="fl_r">
+              <li>
+                <div class="communication">
+                  <div class="row-fluid">
+                    <div class="span12">
+                      <div class="page-content page-jt">
+                        <div class="jieshao">
+                          <span>婴幼儿伤害的家庭预防</span>
+                          <ul>
+                            <li>1.儿童烧烫伤的预防及紧急处理</li>
+                            <li>2.儿童跌落伤预防</li>
+                            <li>3.儿童家用化学品或药品中毒预防和紧急处理</li>
+                          </ul>
+                          <span>培养婴幼儿的社交能力</span>
+                          <ul>
+                            <li>1.宝宝社会交往能力的发展</li>
+                            <li>2.社交能力的训练</li>
+                          </ul>
+                          <span>儿童发育手册</span>
+                        </div>
+                        <div class="pic">
+                          <%= image_tag("changqing/plan_guide_pho.jpg") %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div id="work" class="content">
+          <div class="inner-content">
+            <span class="home-title">睦邻家园</span>
+            <hr>
+            <ul class="fl_r">
+              <li>
+                <div class="showcasing">
+
+                  <div class="page-content page-contents page-jt">
+                    <div class="jieshao jieshaos">
+                      <span>三正生活态度--关爱女孩</span>
+                      <ul>
+                        <li>1.正向心理学</li>
+                        <li>2.正向情绪，正向家庭沟通</li>
+                        <li>2.正向家庭关系</li>
+                      </ul>
+                      <span>幸福厨房</span>
+                      <ul>
+                        <li>1.多蔬、多果、多纤维</li>
+                        <li>2.少糖、少盐、少脂肪</li>
+                      </ul>
+                      <span>家庭保健、安全教育</span>
+                    </div>
+                    <div class="pic">
+                      <%= image_tag("changqing/plan_home_pho.jpg") %>
+                    </div>
+                  </div>
+                </section>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="contact" class="content">
+          <div class="inner-content">
+            <span class="home-title">社区健康“守门人”全科医生</span>
+            <hr>
+            <ul class="fl_r">
+              <li>
+                <div class="life">
+                  <div class="page-content page-jt">
+                    <div class="jieshao">
+                      <span>社区慢性病管理以及健康教育的老师</span>
+                      <ul>
+                        <li>1.提供长期的慢性病预防与管理</li>
+                        <li>2.普及社区健康教育</li>
+                      </ul>
+                      <span>居民用药指导、上门服务的大管家</span>
+                      <ul>
+                        <li>1.提供精确贴心的用药指南</li>
+                        <li>2.全天候的上门诊疗服务</li>
+                      </ul>
+                      <span>社区健康管理的统计员和指挥员</span>
+                    </div>
+                    <div class="pic">
+                      <%= image_tag("changqing/plan_doctor_pho.jpg") %>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>
+
+<script>
+  $(window).scroll(function () {
+    if ($(document).scrollTop() >= 301) {
+        $('#sidemenu .caidan').addClass('fix');
+        $('#breadcrumb').addClass('fix1');
+
+    } else {
+        $('#sidemenu .caidan').removeClass('fix');
+        $('#breadcrumb').removeClass('fix1');
+    }
+});
+</script>
+<script type="text/javascript">
+  $(function(){
+    $('#sidemenu').visualNav({
+      link: 'a',         // add a link class, as necessary (e.g. 'a.menu')
+      targetAttr: 'href',      // added in case you have link = "div" and attribute something like
+      selectedAppliedTo : 'li',        // where to add the selected class name; to only apply to the link, use the same value as is in the link option
+      contentClass: 'content',   // content class to get height of the section
+      contentLinks: 'visualNav', // class name of links inside the content that act like the visualNav menu (smooth scroll)
+      externalLinks: 'external',  // class name of links that link to external content.
+      useHash: true,        // if true, the location hash will be updated
+
+      // Classes added to items
+      inViewClass: 'inView',    // css class added to items in the viewport
+      selectedClass: 'selected',  // css class applied to menu when a link is selected (highlighted)
+      currentContent: 'current',   // css class applied to the content block when it is currently selected in the menu.
+
+      // Appearance
+      bottomMargin: 100,         // margin from the end of the page where the last menu item is used (in case the target is short)
+      fitContent: false,       // If true, the contentClass width will be adjusted to fit the browser window (for horizontal pages).
+      offsetTop: 80,           // add a top offset value (pixels) or jQuery element (height is measured), of any top menu or gap.
+      scrollOnInit: false,       // scroll to first item automatically on initialization
+
+      // Animation
+      animationTime: 500,        // page scrolling time in milliseconds or function( distance ) { return milliseconds; }
+      stopOnInteraction : true,        // if the user presses any key or scrolls the mouse, the animation will cancel
+      easing: [ 'swing', 'swing' ], // horizontal, vertical easing; it might be best to leave one axis as swing [ 'swing', 'easeInCirc' ]
+
+      // Callbacks
+      // visNav is visualNavigation object (see the callbacks page)
+      // $selected is a jQuery object of the currently selected content (class name from "contentClass")
+      initialized: function(visNav, $selected){ }, // Callback executed when the visualNav plugin has finished initializing
+      beforeAnimation: function(visNav, $selected){ }, // Callback executed before the animation begins moving to the targetted element
+      complete: function(visNav, $selected){ }, // Callback executed when the targetted element is in view and scrolling animation has completed
+      changed: function(visNav, $selected){ }  // Callback executed every time the current menu item changes
+
+    });
+  });
+</script>
